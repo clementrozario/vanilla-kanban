@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/images/kanban.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kanban Dashboard</h1>
+      <form id="add-task-form">
+        <input
+          type="text"
+          name="task"
+          placeholder="New Task"
+          required
+          aria-label="New Task"
+        />
+        <button type="submit">Add Task</button>
+      </form>
+    </header>
+
+    <main id="main-content">
+      <section>
+        <h2>To Do</h2>
+        <div class="cards-container"></div>
+      </section>
+
+      <section>
+        <h2>In Progress</h2>
+        <div class="cards-container"></div>
+      </section>
+
+      <section>
+        <h2>Done</h2>
+        <div class="cards-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Crafted with ❤️ by Clement using HTML, CSS & vanilla JS. Say hi:
+        <a href="mailto:clementcla7@gmail.com">clementcla7@gmail.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
