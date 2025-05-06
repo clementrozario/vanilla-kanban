@@ -102,6 +102,15 @@ section h2 {
   gap: 0.5rem;
 }
 
+/* ---------- Task Cards ---------- */
+.card {
+  background-color: var(--card-bg);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  word-wrap: break-word;
+}
+
 /* ---------- Footer ---------- */
 footer {
   text-align: center;
@@ -130,4 +139,43 @@ footer a:hover {
   form button {
     width: 100%;
   }
+}
+
+/* ---------- Card Actions ---------- */
+.card-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.card-actions button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.3rem 0.75rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.card-actions button:hover {
+  background-color: #005f99;
+}
+
+.card-actions .delete-btn {
+  background-color: #e74c3c; /* red for delete */
+}
+
+.card-actions .delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Editable task text styling (optional but helpful) */
+.card p[contenteditable="true"] {
+  outline: 2px dashed var(--accent-color);
+  background-color: #fff;
+  padding: 0.25rem;
+  border-radius: var(--border-radius);
 }
